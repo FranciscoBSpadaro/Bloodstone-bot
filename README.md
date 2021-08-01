@@ -21,3 +21,6 @@ os paramentros [230,118], [374,181]) é as cordenadas da barras de hp e icones d
 - no arquivo autoblood.py  a linha 46
 self.wincap = WindowCapture('[#] BloodStone - The Ancient Curse [v1.25] [#]')
 é o nome da versao do cliente com a janela do jogo aberto. o [#] é quando o jogo está rodando pelo sandbox
+
+Essas configurações recentes estão nos arquivos da pasta do barbaro ' barb ' 
+no arquivo autoblood.py da pasta barb cheguei a importar essa lib  import pydirectinput que é uma opção ao pyautogui mas não é necessario no bloodstone , essa lib usa as mesmas funcões do pyautogui porem funciona em jogos que o pyautogui nao funciona . mas no bloodstone os 2 so funciona dentro do sandbox
