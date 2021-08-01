@@ -28,7 +28,7 @@ class AutoHealer:
         self.hk_vida_pot = hk_vida_pot
         self.hk_mana_pot = hk_mana_pot
         self.hk_mana_ring = hk_mana_ring
-        self.hk_troca_ring = hk_troca_ring
+        #self.hk_troca_ring = hk_troca_ring
         self.hk_food = hk_food
         self.hk_cura_media = hk_cura_media
         self.loc_top_status = loc_top_status
