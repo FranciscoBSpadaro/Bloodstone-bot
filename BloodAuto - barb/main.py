@@ -1,10 +1,5 @@
-import cv2 as cv
-import numpy as np
-import os
 import pyautogui
 import time
-from windowcapture import WindowCapture
-from vision import Vision
 from autoblood import AutoHealer
 
 pyautogui.FAILSAFE = False

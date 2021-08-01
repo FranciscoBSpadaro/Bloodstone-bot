@@ -1,9 +1,5 @@
-import cv2 as cv
-import numpy as np
-import os
 import pyautogui
-import pydirectinput
-import time
+#import pydirectinput
 from windowcapture import WindowCapture
 from vision import Vision
 
