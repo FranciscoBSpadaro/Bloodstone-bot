@@ -18,3 +18,5 @@ bot inicia fora do protection zone.
 - a ordem dos indices do inicio da função exemplo hk_vel está no
 
 [230,118], [374,181])  é a cordenada dos pixel da barras de hp  monitor 21.5 
+
+![alt text](https://fbsdevuploads.s3.amazonaws.com/azul230118vermelho374181.png)
