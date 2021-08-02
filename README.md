@@ -24,3 +24,5 @@ bot inicia fora do protection zone.
 230,118 é ponto azul e o  374,181 é o ponto vermelho  em uma resoluçao  1920 x 1080
 
 191 ,100 é ponto azul e o  312 , 153 é o ponto vermelho em uma resoluçao  1600 x 900
+
+163,85  é ponto azul e o  265,129  é o ponto vermelho em uma resoluçao  1360 x 768
