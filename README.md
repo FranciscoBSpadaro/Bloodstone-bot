@@ -16,3 +16,5 @@ bot inicia fora do protection zone.
 - iniciar = AutoHealer("f5", "0", "f1", "f2", "f3", "f4", "0", "0", [230,118], [374,181])
 
 - a ordem dos indices do inicio da função exemplo hk_vel está no
+
+[230,118], [374,181])  é a cordenada dos pixel da barras de hp  monitor 21.5 
