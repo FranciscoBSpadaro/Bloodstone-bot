@@ -6,7 +6,7 @@ bot inicia fora do protection zone.
 
 #### requerimentos
 - Python 3.7   https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
-- libs : pip install numpy==1.18 , pip install opencv-python  or just pip install opencv-python==3.4.10.37  que ja instala numpy 1.18  , pip install pywin32 , pip install pyautogui
+- libs : pip install numpy==1.18 , pip install opencv-python  or just pip install opencv-python==3.4.10.37  que é compativel com numpy 1.18  , pip install pywin32 , pip install pyautogui
 - abrir pasta do bot e com botao direito abrir com powershell e executar :  python  main.py
 
 ##### Configurando as hotkeys
