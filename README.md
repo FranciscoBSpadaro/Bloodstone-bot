@@ -21,4 +21,4 @@ bot inicia fora do protection zone.
 
 ![alt text](https://fbsdevuploads.s3.amazonaws.com/botpixelcfg.png)
 
-230,118 é ponto azul e o  374,181 é o vermelho  da resoluçao  1920 x 1080
+230,118 é ponto azul e o  374,181 é o ponto vermelho  em uma de  resoluçao  1920 x 1080
