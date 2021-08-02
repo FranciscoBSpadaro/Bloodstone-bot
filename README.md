@@ -19,6 +19,6 @@ bot inicia fora do protection zone.
 
 [230,118], [374,181])  é a cordenada dos pixel da barras de hp 
 
-![alt text](https://fbsdevuploads.s3.amazonaws.com/azul230118vermelho374181.png)
+![alt text](https://fbsdevuploads.s3.amazonaws.com/azul230118vermelho374181.png),
 
 230,118 é ponto azul e o  374,181 é o vermelho  da resoluçao  1920 x 1080
