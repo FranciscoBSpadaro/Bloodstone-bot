@@ -5,8 +5,8 @@ cura vida com bandagens , cura vida com potion , cura mana , renova buff de corr
 bot inicia fora do protection zone.
 
 #### requerimentos
-- Python 3.7
-- libs : pip install opencv-python , pip install numpy=1.18 , pip install pywin32 , pip install pyautogui
+- Python 3.7   https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
+- libs : pip install numpy==1.18 , pip install opencv-python  or just pip install opencv-python==3.4.10.37  que é compativel com numpy 1.18  , pip install pywin32 , pip install pyautogui
 - abrir pasta do bot e com botao direito abrir com powershell e executar :  python  main.py
 
 ##### Configurando as hotkeys
@@ -15,12 +15,14 @@ bot inicia fora do protection zone.
 ##### Arquivo main.py :
 - iniciar = AutoHealer("f5", "0", "f1", "f2", "f3", "f4", "0", "0", [230,118], [374,181])
 
-- a ordem dos indices do inicio da função exemplo hk_vel está no indice 0 e no indice 0 do AutoHealer do arquivo main.py está a tecla ' f5 ' então o buff de velocidade está na tecla f5 isso pode alterar avontade .
-os paramentros [230,118], [374,181]) é as cordenadas da barras de hp e icones de buff , para descobrir a cordenada de acordo com a resolução do monitor tirar print com o jogo aberto e colar no paint . e com o cursor verificar onde é as cordenadas , 
+- a ordem dos indices do inicio da função exemplo hk_vel está no
 
-- no arquivo autoblood.py  a linha 46
-self.wincap = WindowCapture('[#] BloodStone - The Ancient Curse [v1.25] [#]')
-é o nome da versao do cliente com a janela do jogo aberto. o [#] é quando o jogo está rodando pelo sandbox
+[230,118], [374,181])  é a cordenada dos pixel da barras de hp 
 
-Essas configurações recentes estão nos arquivos da pasta do barbaro ' barb ' 
-no arquivo autoblood.py da pasta barb cheguei a importar essa lib  import pydirectinput que é uma opção ao pyautogui mas não é necessario no bloodstone , essa lib usa as mesmas funcões do pyautogui porem funciona em jogos que o pyautogui nao funciona . mas no bloodstone os 2 so funciona dentro do sandbox
+![alt text](https://fbsdevuploads.s3.amazonaws.com/botpixelcfg.png)
+
+230,118 é ponto azul e o  374,181 é o ponto vermelho  em uma resoluçao  1920 x 1080
+
+191 ,100 é ponto azul e o  312 , 153 é o ponto vermelho em uma resoluçao  1600 x 900
+
+163,85  é ponto azul e o  265,129  é o ponto vermelho em uma resoluçao  1360 x 768
