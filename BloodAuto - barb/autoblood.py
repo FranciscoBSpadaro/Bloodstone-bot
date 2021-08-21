@@ -16,20 +16,22 @@ class AutoHealer:
     loc_bot_status = []
     # constructor
     #("8", "f4", "f3", "1", "7", "5", "f8", [230,118], [355,156])
-    def __init__(self, hk_vel, hk_mana_ring, hk_cura, hk_cura_media, hk_vida_pot, hk_mana_pot, hk_food, hk_troca_ring, loc_top_status, loc_bot_status):
+    def __init__(self, hk_vel, hk_mana_ring, hk_cura, hk_cura_media, hk_vida_pot, hk_mana_pot, hk_food, hk_troca_ring, hk_prlz, loc_top_status, loc_bot_status):
         #imagens
         self.pz = Vision('pz.jpg')
         self.food = Vision('food_blood.jpg')
         self.vida = Vision('hp.jpg')
         self.vel = Vision('vel.jpg')
+        self.prlz = Vision('prlz.jpg')
         #hotkeys
         self.hk_vel = hk_vel
+        self.hk_prlz = hk_prlz
         self.hk_cura = hk_cura
         self.hk_vida_pot = hk_vida_pot
         self.hk_mana_pot = hk_mana_pot
-        self.hk_mana_ring = hk_mana_ring
+        #self.hk_mana_ring = hk_mana_ring
         #self.hk_troca_ring = hk_troca_ring
-        self.hk_food = hk_food
+        #self.hk_food = hk_food
         self.hk_cura_media = hk_cura_media
         self.loc_top_status = loc_top_status
         self.loc_bot_status = loc_bot_status
@@ -61,7 +63,7 @@ class AutoHealer:
         if r > 160 and r < 200:
             print('vida cheia')
         else:
-            print('curar vida')
+            print('curar vida curativo')
             #pydirectinput.press(self.hk_cura)
             #pydirectinput.keyUp(self.hk_cura)
             pyautogui.keyDown(self.hk_cura)
@@ -71,13 +73,13 @@ class AutoHealer:
     def cura_vida_media(self):
         self.screenshot = self.wincap.get_screenshot()
         #curar vida
-        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+99]
+        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+95]
         #print(r, g, b, self.loc_vida[0], self.loc_vida[1])
 
         if r > 160 and r < 200:
             print('vida cheia')
         else:
-            print('curar vida')
+            print('curar vida potion leve')
             pyautogui.keyDown(self.hk_cura_media)
             pyautogui.keyUp(self.hk_cura_media)
 
@@ -86,20 +88,20 @@ class AutoHealer:
     def cura_vida_pot(self):
         self.screenshot = self.wincap.get_screenshot()
         #curar vida
-        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+62]
+        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+68]
         #print(r, g, b, self.loc_vida[0], self.loc_vida[1])
 
         if r > 160 and r < 200:
             print('vida cheia')
         else:
-            print('curar vida')
+            print('curar vida potion forte')
             pyautogui.keyDown(self.hk_vida_pot)
             pyautogui.keyUp(self.hk_vida_pot)
 
     def curar_mana_pot(self):
         self.screenshot = self.wincap.get_screenshot()
         #A barra de mana tem 116px, são 11,6px para cada 10% de mana
-        b, g, r = self.screenshot[self.loc_mana[1], self.loc_mana[0]+59]
+        b, g, r = self.screenshot[self.loc_mana[1], self.loc_mana[0]+53]
         #print(self.loc_mana[0]+58, self.loc_mana[1])
         #print(r, g, b)
         if r != 0 and g != 93:
@@ -110,11 +112,11 @@ class AutoHealer:
     def cura_mana_ring(self):
         self.screenshot = self.wincap.get_screenshot()
         #curar vida
-        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+60]
+        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+50]
         #print(r, g, b, self.loc_vida[0], self.loc_vida[1])
 
         if r > 160 and r < 200:
-            print('vida cheia trocar ring')
+            print('vida cheia')
             #pyautogui.keyDown(self.hk_troca_ring)
             #pyautogui.keyUp(self.hk_troca_ring)
         else:
@@ -140,6 +142,15 @@ class AutoHealer:
             print('usar velocidade')
             pyautogui.keyDown(self.hk_vel)
             pyautogui.keyUp(self.hk_vel)
+
+    def usar_prlz(self):
+        self.screenshot = self.wincap.get_screenshot()
+        area_status = self.screenshot[self.y_1:self.y_2, self.x_1:self.x_2]
+        loc_arm = self.prlz.find(area_status, 0.8)
+        if loc_arm == 0:
+            print('usar cura paralize')
+            pyautogui.keyDown(self.hk_prlz)
+            pyautogui.keyUp(self.hk_prlz)
 
     '''def batalha(self):
         self.screenshot = self.wincap.get_screenshot()
