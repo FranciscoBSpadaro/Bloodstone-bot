@@ -88,7 +88,7 @@ class AutoHealer:
     def cura_vida_pot(self):
         self.screenshot = self.wincap.get_screenshot()
         #curar vida
-        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+67]
+        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+66]
         #print(r, g, b, self.loc_vida[0], self.loc_vida[1])
 
         if r > 160 and r < 200:
