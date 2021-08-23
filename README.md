@@ -29,9 +29,10 @@ bot inicia fora do protection zone.
 
 #### a pasta BloodAuto - barb está atualizada e com cura paralize as outras pastas estão desatualizadas
 - f1 cura curativo
-- f2 cura media - opcional
+- f2 cura media 
 - f3 cura potion hp
 - f4 cura mana potion
 - f5 auto magia de velocidade
 - f6 cura paralisia
 - f7 anel barreira de mana
+- para habilitar ou desabilitar uma funçao basta deixar o ' #  '  na frente do codigo no arquivo  main.py
