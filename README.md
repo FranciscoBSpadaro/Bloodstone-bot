@@ -11,11 +11,11 @@ bot inicia fora do protection zone.
 
 ##### Configurando as hotkeys
 ##### Arquivo autoblood:
--   def __init__(self, hk_vel, hk_mana_ring, hk_cura, hk_cura_media, hk_vida_pot, hk_mana_pot, hk_food, hk_troca_ring, loc_top_status, loc_bot_status):
+-   def __init__(self, hk_vel, hk_mana_ring, hk_cura, hk_cura_media, hk_vida_pot, hk_mana_pot, hk_food, hk_troca_ring, hk_prlz, loc_top_status, loc_bot_status):
 ##### Arquivo main.py :
-- iniciar = AutoHealer("f5", "0", "f1", "f2", "f3", "f4", "0", "0", [230,118], [374,181])
+- iniciar = AutoHealer("f5", "f7", "f1", "f2", "f3", "f4", "0", "0", "f6", [230,118], [374,181])
 
-- a ordem dos indices do inicio da função exemplo hk_vel está no
+- a ordem dos indices do inicio da função autoblood def_init exemplo hk_vel está no f5 do AutoHealer
 
 [230,118], [374,181])  é a cordenada dos pixel da barras de hp 
 
@@ -28,3 +28,10 @@ bot inicia fora do protection zone.
 163,85  é ponto azul e o  265,129  é o ponto vermelho em uma resoluçao  1360 x 768
 
 a pasta BloodAuto - barb está atualizada e com cura paralize
+f1 cura curativo
+f2 cura media - opcional
+f3 cura potion hp
+f4 cura mana potion
+f5 auto magia de velocidade
+f6 cura paralisia
+f7 anel barreira de mana
