@@ -27,11 +27,11 @@ bot inicia fora do protection zone.
 
 163,85  é ponto azul e o  265,129  é o ponto vermelho em uma resoluçao  1360 x 768
 
-a pasta BloodAuto - barb está atualizada e com cura paralize
-f1 cura curativo
-f2 cura media - opcional
-f3 cura potion hp
-f4 cura mana potion
-f5 auto magia de velocidade
-f6 cura paralisia
-f7 anel barreira de mana
+#### a pasta BloodAuto - barb está atualizada e com cura paralize as outras pastas estão desatualizadas
+- f1 cura curativo
+- f2 cura media - opcional
+- f3 cura potion hp
+- f4 cura mana potion
+- f5 auto magia de velocidade
+- f6 cura paralisia
+- f7 anel barreira de mana
