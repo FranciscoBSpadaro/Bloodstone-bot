@@ -41,7 +41,7 @@ class AutoHealer:
         self.x_1 = self.loc_top_status[0]
         self.x_2 = self.loc_bot_status[0]
         #pegar tela
-        self.wincap = WindowCapture('[#] BloodStone - The Ancient Curse [v1.25] [#]')
+        self.wincap = WindowCapture('[#] BloodStone - The Ancient Curse [v1.26] [#]')
         #tirar print
         self.screenshot = self.wincap.get_screenshot()
         #debugar o print
@@ -88,7 +88,7 @@ class AutoHealer:
     def cura_vida_pot(self):
         self.screenshot = self.wincap.get_screenshot()
         #curar vida
-        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+66]
+        b, g, r = self.screenshot[self.loc_vida[1], self.loc_vida[0]+55]
         #print(r, g, b, self.loc_vida[0], self.loc_vida[1])
 
         if r > 160 and r < 200:
