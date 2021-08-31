@@ -6,7 +6,7 @@ pyautogui.FAILSAFE = False
 
 print('Iniciando em 3s...')
 time.sleep(3)
-iniciar = AutoHealer("f5", "0", "f1", "f2", "f3", "f4", "", "", "f6", [230,118], [374,181])
+iniciar = AutoHealer("f5", "f7", "f1", "f2", "f3", "f4", "", "", "f6", [230,118], [374,181])
 while 1:
     pz = iniciar.batalha()
     if pz == 1 :
